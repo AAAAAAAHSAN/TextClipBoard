@@ -1,0 +1,79 @@
+:root{
+    --height: 150px;
+    --width: 350px;
+    --border-radius: 10px;
+}
+.mytooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.mytooltip .mytooltiptext {
+    width: 140px;
+    background-color: #8ae955;
+    color: #d23838;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 50;
+    transition: opacity 0.3s;
+}
+
+.mytooltip .mytooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.mytooltip:hover .mytooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+#textarea1_id{
+    background-color: #7ef3a8;
+    height: var(--height);
+    width: var(--width);
+}
+
+#textarea2_id{
+    background-color: #7ef5f5;
+    height: var(--height);
+    width: var(--width);
+}
+
+#textarea3_id{
+    background-color: #b88bf6;
+    height: var(--height);
+    width: var(--width);
+}
+#textarea4_id{
+    background-color: #f68bc6;
+    height: var(--height);
+    width: var(--width);
+}
+.button1{
+    background-color: #0034c6;
+    color: #fff;
+    border-radius: var(--border-radius);
+}
+
+.button2{
+    background-color: #0d9f00;
+    color: #fff;
+    border-radius: var(--border-radius);
+}
+.button3{
+    background-color: red;
+    color: #fff;
+    border-radius: var(--border-radius);
+}
