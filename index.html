@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Clip Board</title>
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+
+
+<div >
+    <div class="d-flex">
+        <div class="pl-2">
+            <textarea  id="textarea1_id" name="Textarea1" ></textarea>
+        </div>
+        <div>
+            <div class="mytooltip pl-2">
+                <button onclick="copytext1()" class="button1" onmouseout="outFunc()">
+
+                    Copy
+                </button>
+            </div>
+            <div class="pl-2 pt-2">
+                <button onclick="pastetext1()" class="button2" >
+                    Paste
+                </button>
+            </div>
+            <div class="pl-2 pt-2">
+                <button onclick="clearAll1()" class="button3" >
+                    Clear
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div >
+    <div class="d-flex">
+        <div class="pl-2">
+            <textarea  id="textarea2_id" name="Textarea1" ></textarea>
+        </div>
+        <div>
+            <div class="mytooltip pl-2">
+                <button onclick="copytext2()" class="button1" onmouseout="outFunc()">
+
+                    Copy
+                </button>
+            </div>
+            <div class="pl-2 pt-2">
+                <button onclick="pastetext2()" class="button2" >
+                    Paste
+                </button>
+            </div>
+            <div class="pl-2 pt-2">
+                <button onclick="clearAll2()" class="button3" >
+                    Clear
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div >
+    <div class="d-flex">
+        <div class="pl-2">
+            <textarea  id="textarea3_id" name="Textarea1" ></textarea>
+        </div>
+        <div>
+            <div class="mytooltip pl-2">
+                <button onclick="copytext3()" class="button1" onmouseout="outFunc()">
+                    Copy
+                </button>
+            </div>
+            <div class="pl-2 pt-2">
+                <button onclick="pastetext3()" class="button2" >
+                    Paste
+                </button>
+            </div>
+            <div class="pl-2 pt-2">
+                <button onclick="clearAll3()" class="button3" >
+                    Clear
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="">
+    <div class="d-flex">
+        <div class="pl-2">
+            <textarea  id="textarea4_id" name="Textarea1"  ></textarea>
+        </div>
+        <div class="">
+            <div class="mytooltip pl-2">
+                <button onclick="copytext4()" class="button1" >
+                    Copy
+                </button>
+            </div>
+
+            <div class="pl-2 pt-2">
+                <button onclick="pastetext4()" class="button2" >
+                    Paste
+                </button>
+            </div>
+            <div class="pl-2 pt-2">
+                <button onclick="clearAll4()" class="button3" >
+                    Clear
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<script src="mainScript.js"></script>
+</body>
+</html>
